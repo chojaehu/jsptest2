@@ -31,17 +31,20 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4.1
 	implementation group: 'org.bgee.log4jdbc-log4j2', name: 'log4jdbc-log4j2-jdbc4.1', version: '1.16'	
 	
-	// https://mvnrepository.com/artifact/javax.servlet/jstl
-	implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
+	
+	 // Jakarta EE 9.0 Servlet API
+    implementation 'javax.servlet:javax.servlet-api:4.0.1'
 
-	implementation "org.apache.tomcat.embed:tomcat-embed-jasper"
+    // Jakarta EE 9.0 JSTL
+    implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:2.0.0'
 
-	// Servlet API
-    providedCompile 'javax.servlet:javax.servlet-api:4.0.1'
+    // Embedded Tomcat Jasper for JSP
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
 
-    // JSP API
-    providedCompile 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.3'
-}
+    // JSTL Standard Tag Library
+    implementation 'javax.servlet:jstl:1.2'
+    
+    }
 
 tasks.named('test') {
 	useJUnitPlatform()

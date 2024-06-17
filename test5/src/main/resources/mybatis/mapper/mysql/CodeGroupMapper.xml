@@ -16,6 +16,46 @@
 		from codegroup
 		where 1=1       
     </select>
+    <select id="selectOne" resultMap="resultMapObj">
+    select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq =#{cdgSeq}
+    </select>
+    
+    <insert id="insert">
+    insert into codegroup
+    (
+    cdgName,
+	cdgDelNy,
+	cdgRegDt,
+	cdgModDt
+    )
+    values
+    (
+    #{cdgName},
+    0,
+    NOW(),
+    NOW()
+    )
+    </insert>
+    <update id="update">
+    update codegroup
+    set
+    cdgName = #{cdgName}
+    where cdgSeq = #{cdgSeq}
+    </update>
+    
+    <update id="updatedele">
+    update codegroup
+    set
+    cdgDelNy = 1 
+    where cdgSeq = #{cdgSeq}
+    </update>
 	
   
 	  

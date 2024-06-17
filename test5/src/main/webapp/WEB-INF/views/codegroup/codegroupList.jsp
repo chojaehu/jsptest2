@@ -17,12 +17,12 @@
         <div class="col-lg-8">
         
             <div class="col-lg-12">
-                <h1 class="page-header">aaaaa</h1>
+                <h1 class="page-header">코드그룹 리스트</h1>
             </div>
             <div class="row">
                   <div class="col-lg-12">
-                      <button type="button" class="btn btn-outline btn-primary pull-right">
-                          <i class="fa fa-edit fa-fw"></i> aaaa
+                      <button type="button" class="btn btn-outline btn-primary pull-right" id=btn>
+                          <i class="fa fa-edit fa-fw"></i> 등록
                       </button>
                   </div>
               </div>
@@ -39,10 +39,16 @@
                             </tr>
                         </thead>
                         <tbody>
+                        <%-- <c:url value="/codegroupform">
+								     <c:param name="cdgSeq" value="${item.cdgSeq}" />
+								</c:url> --%>
                        <c:forEach items="${list}" var="item">
                             <tr>
                                 <td>${item.cdgSeq}</td>
-                                <td>${item.cdgName}</td>
+                                <td>
+                                <a href="/codegroupform?cdgSeq=${item.cdgSeq}">
+                                ${item.cdgName}</a>
+                                </td>
                                 <td>${item.cdgDelNy}</td>
                                 <td><fmt:formatDate pattern="yyyy-MM-dd hh:mm:ss" value="${item.cdgRegDt}"/></td>
                             </tr>
@@ -54,5 +60,12 @@
         </div>
     </div>
 </div>
+
+ <script type="text/javascript">
+ document.getElementById("btn").onclick = function(){
+	 window.location.href = '/codegroupInst';
+ }
+  </script>
 </body>
+
 </html>

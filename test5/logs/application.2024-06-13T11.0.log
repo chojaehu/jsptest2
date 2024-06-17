@@ -1,0 +1,1029 @@
+2024-06-13T11:14:12.471 [http-nio-8087-exec-7] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1
+ {executed in 0 msec} 
+2024-06-13T11:14:12.475 [http-nio-8087-exec-7] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:18:10.324 [http-nio-8087-exec-5] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. insert into codegroup
+    (
+    cdgName,
+	cdgDelNy,
+	cdgRegDt,
+	cdgModDt
+    )
+    values
+    (
+    '아무거나',
+    0,
+    NOW(),
+    NOW()
+    )
+ {executed in 13 msec} 
+2024-06-13T11:18:10.332 [http-nio-8087-exec-7] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1
+ {executed in 1 msec} 
+2024-06-13T11:18:10.333 [http-nio-8087-exec-7] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:19:38.307 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-13T11:19:38.308 [Thread-39] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:19:38.318 [Thread-39] INFO c.z.h.HikariDataSource - HikariPool-3 - Shutdown initiated... 
+2024-06-13T11:19:38.323 [Thread-39] INFO c.z.h.HikariDataSource - HikariPool-3 - Shutdown completed. 
+2024-06-13T11:19:38.395 [restartedMain] INFO c.n.Test5Application - Starting Test5Application using Java 17.0.9 with PID 9556 (C:\Users\cho\git\jsptest2\test5\bin\main started by cho in C:\Users\cho\git\jsptest2\test5) 
+2024-06-13T11:19:38.395 [restartedMain] INFO c.n.Test5Application - The following 1 profile is active: "external" 
+2024-06-13T11:19:38.556 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8087 (http) 
+2024-06-13T11:19:38.557 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:19:38.557 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2024-06-13T11:19:38.557 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24] 
+2024-06-13T11:19:38.622 [restartedMain] INFO o.a.j.s.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024-06-13T11:19:38.625 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2024-06-13T11:19:38.625 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 228 ms 
+2024-06-13T11:19:38.730 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2024-06-13T11:19:38.738 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:19:38.742 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8087 (http) with context path '' 
+2024-06-13T11:19:38.745 [restartedMain] INFO c.n.Test5Application - Started Test5Application in 0.37 seconds (process running for 2620.884) 
+2024-06-13T11:19:38.746 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2024-06-13T11:20:02.475 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-13T11:20:02.477 [Thread-43] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:20:02.555 [restartedMain] INFO c.n.Test5Application - Starting Test5Application using Java 17.0.9 with PID 9556 (C:\Users\cho\git\jsptest2\test5\bin\main started by cho in C:\Users\cho\git\jsptest2\test5) 
+2024-06-13T11:20:02.556 [restartedMain] INFO c.n.Test5Application - The following 1 profile is active: "external" 
+2024-06-13T11:20:02.710 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8087 (http) 
+2024-06-13T11:20:02.710 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:20:02.710 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2024-06-13T11:20:02.710 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24] 
+2024-06-13T11:20:02.773 [restartedMain] INFO o.a.j.s.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024-06-13T11:20:02.775 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2024-06-13T11:20:02.775 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 218 ms 
+2024-06-13T11:20:02.857 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2024-06-13T11:20:02.862 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:20:02.865 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8087 (http) with context path '' 
+2024-06-13T11:20:02.868 [restartedMain] INFO c.n.Test5Application - Started Test5Application in 0.333 seconds (process running for 2645.007) 
+2024-06-13T11:20:02.870 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2024-06-13T11:20:47.859 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-13T11:20:47.860 [Thread-47] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:20:47.934 [restartedMain] INFO c.n.Test5Application - Starting Test5Application using Java 17.0.9 with PID 9556 (C:\Users\cho\git\jsptest2\test5\bin\main started by cho in C:\Users\cho\git\jsptest2\test5) 
+2024-06-13T11:20:47.934 [restartedMain] INFO c.n.Test5Application - The following 1 profile is active: "external" 
+2024-06-13T11:20:48.078 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8087 (http) 
+2024-06-13T11:20:48.078 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:20:48.078 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2024-06-13T11:20:48.078 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24] 
+2024-06-13T11:20:48.136 [restartedMain] INFO o.a.j.s.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024-06-13T11:20:48.138 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2024-06-13T11:20:48.138 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 202 ms 
+2024-06-13T11:20:48.217 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2024-06-13T11:20:48.222 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:20:48.225 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8087 (http) with context path '' 
+2024-06-13T11:20:48.229 [restartedMain] INFO c.n.Test5Application - Started Test5Application in 0.313 seconds (process running for 2690.367) 
+2024-06-13T11:20:48.230 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2024-06-13T11:22:04.718 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-13T11:22:04.720 [Thread-51] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:22:04.793 [restartedMain] INFO c.n.Test5Application - Starting Test5Application using Java 17.0.9 with PID 9556 (C:\Users\cho\git\jsptest2\test5\bin\main started by cho in C:\Users\cho\git\jsptest2\test5) 
+2024-06-13T11:22:04.794 [restartedMain] INFO c.n.Test5Application - The following 1 profile is active: "external" 
+2024-06-13T11:22:04.935 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8087 (http) 
+2024-06-13T11:22:04.935 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:22:04.935 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2024-06-13T11:22:04.935 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24] 
+2024-06-13T11:22:04.993 [restartedMain] INFO o.a.j.s.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024-06-13T11:22:04.995 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2024-06-13T11:22:04.995 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 199 ms 
+2024-06-13T11:22:05.080 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2024-06-13T11:22:05.084 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:22:05.087 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8087 (http) with context path '' 
+2024-06-13T11:22:05.090 [restartedMain] INFO c.n.Test5Application - Started Test5Application in 0.314 seconds (process running for 2767.23) 
+2024-06-13T11:22:05.091 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2024-06-13T11:22:14.607 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-13T11:22:14.607 [Thread-55] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:22:14.682 [restartedMain] INFO c.n.Test5Application - Starting Test5Application using Java 17.0.9 with PID 9556 (C:\Users\cho\git\jsptest2\test5\bin\main started by cho in C:\Users\cho\git\jsptest2\test5) 
+2024-06-13T11:22:14.682 [restartedMain] INFO c.n.Test5Application - The following 1 profile is active: "external" 
+2024-06-13T11:22:14.827 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8087 (http) 
+2024-06-13T11:22:14.827 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:22:14.827 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2024-06-13T11:22:14.827 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24] 
+2024-06-13T11:22:14.887 [restartedMain] INFO o.a.j.s.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024-06-13T11:22:14.889 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2024-06-13T11:22:14.889 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 206 ms 
+2024-06-13T11:22:14.976 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2024-06-13T11:22:14.981 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:22:14.985 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8087 (http) with context path '' 
+2024-06-13T11:22:14.990 [restartedMain] INFO c.n.Test5Application - Started Test5Application in 0.327 seconds (process running for 2777.128) 
+2024-06-13T11:22:14.991 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2024-06-13T11:22:47.843 [File Watcher] INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification) 
+2024-06-13T11:22:47.843 [Thread-59] INFO o.a.c.h.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:22:47.917 [restartedMain] INFO c.n.Test5Application - Starting Test5Application using Java 17.0.9 with PID 9556 (C:\Users\cho\git\jsptest2\test5\bin\main started by cho in C:\Users\cho\git\jsptest2\test5) 
+2024-06-13T11:22:47.917 [restartedMain] INFO c.n.Test5Application - The following 1 profile is active: "external" 
+2024-06-13T11:22:48.064 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8087 (http) 
+2024-06-13T11:22:48.064 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:22:48.064 [restartedMain] INFO o.a.c.c.StandardService - Starting service [Tomcat] 
+2024-06-13T11:22:48.065 [restartedMain] INFO o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24] 
+2024-06-13T11:22:48.120 [restartedMain] INFO o.a.j.s.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. 
+2024-06-13T11:22:48.122 [restartedMain] INFO o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+2024-06-13T11:22:48.122 [restartedMain] INFO o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 203 ms 
+2024-06-13T11:22:48.202 [restartedMain] INFO o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2024-06-13T11:22:48.207 [restartedMain] INFO o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"] 
+2024-06-13T11:22:48.211 [restartedMain] INFO o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8087 (http) with context path '' 
+2024-06-13T11:22:48.215 [restartedMain] INFO c.n.Test5Application - Started Test5Application in 0.317 seconds (process running for 2810.354) 
+2024-06-13T11:22:48.216 [restartedMain] INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged 
+2024-06-13T11:34:39.059 [http-nio-8087-exec-1] INFO o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-06-13T11:34:39.059 [http-nio-8087-exec-1] INFO o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2024-06-13T11:34:39.061 [http-nio-8087-exec-1] INFO o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+2024-06-13T11:34:39.062 [http-nio-8087-exec-1] INFO c.z.h.HikariDataSource - HikariPool-4 - Starting... 
+2024-06-13T11:34:39.073 [http-nio-8087-exec-1] INFO c.z.h.p.HikariPool - HikariPool-4 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@19bcf9dd 
+2024-06-13T11:34:39.073 [http-nio-8087-exec-1] INFO c.z.h.HikariDataSource - HikariPool-4 - Start completed. 
+2024-06-13T11:34:39.075 [http-nio-8087-exec-1] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1
+ {executed in 1 msec} 
+2024-06-13T11:34:39.076 [http-nio-8087-exec-1] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:34:39.090 [http-nio-8087-exec-1] ERROR o.a.c.c.C.[.[.[.[jsp] - Servlet.service() for servlet [jsp] threw exception 
+org.apache.jasper.JasperException: <h3>Validation error messages from TagLibraryValidator for [c] in [/WEB-INF/views/codegroup/codegroupList.jsp]</h3><p>60: Encountered illegal body of tag "c:import" tag, given its attributes.</p><p>60: Encountered illegal body of tag "c:import" tag, given its attributes.</p><p>60: Encountered illegal body of tag "c:import" tag, given its attributes.</p>
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:54)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:301)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:82)
+	at org.apache.jasper.compiler.Validator.validateXmlView(Validator.java:1944)
+	at org.apache.jasper.compiler.Validator.validateExDirectives(Validator.java:1891)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:229)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-06-13T11:34:39.093 [http-nio-8087-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [<h3>Validation error messages from TagLibraryValidator for [c] in [/WEB-INF/views/codegroup/codegroupList.jsp]</h3><p>60: Encountered illegal body of tag "c:import" tag, given its attributes.</p><p>60: Encountered illegal body of tag "c:import" tag, given its attributes.</p><p>60: Encountered illegal body of tag "c:import" tag, given its attributes.</p>] with root cause 
+org.apache.jasper.JasperException: <h3>Validation error messages from TagLibraryValidator for [c] in [/WEB-INF/views/codegroup/codegroupList.jsp]</h3><p>60: Encountered illegal body of tag "c:import" tag, given its attributes.</p><p>60: Encountered illegal body of tag "c:import" tag, given its attributes.</p><p>60: Encountered illegal body of tag "c:import" tag, given its attributes.</p>
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:54)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:301)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:82)
+	at org.apache.jasper.compiler.Validator.validateXmlView(Validator.java:1944)
+	at org.apache.jasper.compiler.Validator.validateExDirectives(Validator.java:1891)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:229)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:171)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:314)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-06-13T11:34:48.214 [http-nio-8087-exec-2] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1
+ {executed in 0 msec} 
+2024-06-13T11:34:48.215 [http-nio-8087-exec-2] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:34:48.368 [http-nio-8087-exec-2] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='1'
+ {executed in 3 msec} 
+2024-06-13T11:34:48.368 [http-nio-8087-exec-2] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:34:48.466 [http-nio-8087-exec-2] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='2'
+ {executed in 0 msec} 
+2024-06-13T11:34:48.467 [http-nio-8087-exec-2] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:34:48.469 [http-nio-8087-exec-2] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='3'
+ {executed in 0 msec} 
+2024-06-13T11:34:48.470 [http-nio-8087-exec-2] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:34:48.472 [http-nio-8087-exec-2] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='4'
+ {executed in 1 msec} 
+2024-06-13T11:34:48.473 [http-nio-8087-exec-2] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:34:48.475 [http-nio-8087-exec-2] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='5'
+ {executed in 1 msec} 
+2024-06-13T11:34:48.476 [http-nio-8087-exec-2] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:34:48.478 [http-nio-8087-exec-2] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='6'
+ {executed in 0 msec} 
+2024-06-13T11:34:48.479 [http-nio-8087-exec-2] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:34:48.481 [http-nio-8087-exec-2] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='7'
+ {executed in 1 msec} 
+2024-06-13T11:34:48.482 [http-nio-8087-exec-2] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:34:48.485 [http-nio-8087-exec-2] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='8'
+ {executed in 1 msec} 
+2024-06-13T11:34:48.485 [http-nio-8087-exec-2] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:34:48.488 [http-nio-8087-exec-2] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='9'
+ {executed in 1 msec} 
+2024-06-13T11:34:48.489 [http-nio-8087-exec-2] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:34:48.505 [http-nio-8087-exec-2] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='10'
+ {executed in 11 msec} 
+2024-06-13T11:34:48.508 [http-nio-8087-exec-2] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:35:05.763 [http-nio-8087-exec-3] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1
+ {executed in 1 msec} 
+2024-06-13T11:35:05.764 [http-nio-8087-exec-3] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:35:11.444 [http-nio-8087-exec-5] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1
+ {executed in 0 msec} 
+2024-06-13T11:35:11.445 [http-nio-8087-exec-5] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:35:11.557 [http-nio-8087-exec-5] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='1'
+ {executed in 1 msec} 
+2024-06-13T11:35:11.558 [http-nio-8087-exec-5] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:35:11.562 [http-nio-8087-exec-5] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='2'
+ {executed in 1 msec} 
+2024-06-13T11:35:11.563 [http-nio-8087-exec-5] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:35:11.566 [http-nio-8087-exec-5] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='3'
+ {executed in 0 msec} 
+2024-06-13T11:35:11.566 [http-nio-8087-exec-5] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:35:11.569 [http-nio-8087-exec-5] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='4'
+ {executed in 1 msec} 
+2024-06-13T11:35:11.569 [http-nio-8087-exec-5] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:35:11.572 [http-nio-8087-exec-5] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='5'
+ {executed in 1 msec} 
+2024-06-13T11:35:11.573 [http-nio-8087-exec-5] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:35:11.575 [http-nio-8087-exec-5] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='6'
+ {executed in 0 msec} 
+2024-06-13T11:35:11.576 [http-nio-8087-exec-5] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:35:11.580 [http-nio-8087-exec-5] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='7'
+ {executed in 0 msec} 
+2024-06-13T11:35:11.580 [http-nio-8087-exec-5] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:35:11.583 [http-nio-8087-exec-5] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='8'
+ {executed in 1 msec} 
+2024-06-13T11:35:11.583 [http-nio-8087-exec-5] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:35:11.587 [http-nio-8087-exec-5] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='9'
+ {executed in 1 msec} 
+2024-06-13T11:35:11.587 [http-nio-8087-exec-5] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:35:11.589 [http-nio-8087-exec-5] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='10'
+ {executed in 0 msec} 
+2024-06-13T11:35:11.590 [http-nio-8087-exec-5] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:36:48.952 [http-nio-8087-exec-9] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1
+ {executed in 1 msec} 
+2024-06-13T11:36:48.953 [http-nio-8087-exec-9] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:38:32.920 [http-nio-8087-exec-3] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1
+ {executed in 1 msec} 
+2024-06-13T11:38:32.921 [http-nio-8087-exec-3] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:38:54.729 [http-nio-8087-exec-4] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1
+ {executed in 0 msec} 
+2024-06-13T11:38:54.730 [http-nio-8087-exec-4] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:41:12.203 [http-nio-8087-exec-8] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1
+ {executed in 0 msec} 
+2024-06-13T11:41:12.204 [http-nio-8087-exec-8] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:42:21.031 [http-nio-8087-exec-1] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1
+ {executed in 0 msec} 
+2024-06-13T11:42:21.031 [http-nio-8087-exec-1] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:45:19.246 [http-nio-8087-exec-4] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1
+ {executed in 1 msec} 
+2024-06-13T11:45:19.247 [http-nio-8087-exec-4] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|3      |성별      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|4      |채팅방인원   |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|5      |지역      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|6      |낚시대     |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|7      |릴       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|8      |미끼      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|9      |추       |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00    |
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:45:20.892 [http-nio-8087-exec-6] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='1'
+ {executed in 0 msec} 
+2024-06-13T11:45:20.892 [http-nio-8087-exec-6] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:46:16.283 [http-nio-8087-exec-7] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='1'
+ {executed in 0 msec} 
+2024-06-13T11:46:16.284 [http-nio-8087-exec-7] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:46:19.562 [http-nio-8087-exec-10] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='2'
+ {executed in 1 msec} 
+2024-06-13T11:46:19.562 [http-nio-8087-exec-10] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|2      |어종      |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:46:20.922 [http-nio-8087-exec-9] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='10'
+ {executed in 1 msec} 
+2024-06-13T11:46:20.923 [http-nio-8087-exec-9] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
+2024-06-13T11:48:45.798 [http-nio-8087-exec-3] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='1'
+ {executed in 1 msec} 
+2024-06-13T11:48:45.799 [http-nio-8087-exec-3] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|-----------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt         |
+|-------|--------|---------|----------------------|-----------------|
+|1      |낚시종류    |0        |2024-05-10 00:00:00.0 |2024-05-10T00:00 |
+|-------|--------|---------|----------------------|-----------------|
+ 
+2024-06-13T11:48:59.203 [http-nio-8087-exec-4] DEBUG j.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+31. select 
+			cdgSeq,
+			cdgName,
+			cdgDelNy,
+			cdgRegDt,
+			cdgModDt 
+		from codegroup
+		where 1=1   and cdgSeq ='10'
+ {executed in 1 msec} 
+2024-06-13T11:48:59.203 [http-nio-8087-exec-4] INFO j.resultsettable - 
+|-------|--------|---------|----------------------|--------------------|
+|cdgseq |cdgname |cdgdelny |cdgregdt              |cdgmoddt            |
+|-------|--------|---------|----------------------|--------------------|
+|10     |아무거나    |0        |2024-06-13 11:18:10.0 |2024-06-13T11:18:10 |
+|-------|--------|---------|----------------------|--------------------|
+ 
